@@ -48,5 +48,6 @@ def over?(board)
 end
 
 def winner(board)
-  #if won?(board)
+  winning_indices = won?(board)
+  return board[winning_indices[0]]
 end
