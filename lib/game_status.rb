@@ -52,6 +52,6 @@ def winner(board)
   if winning_indices.kind_of?(Array)
     return board[winning_indices[0]]
   else
-    nil
+    return nil
   end
 end
