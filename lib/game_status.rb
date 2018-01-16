@@ -30,9 +30,14 @@ def won?(board)
 end
 
 def full?(board)
+  number_turns = 0
   board.each do |spot|
     if spot == "X" || spot == "O"
       true
+      number_turns += 1
     end
+  end
+  if number_turns < 9
+    false
   end
 end
