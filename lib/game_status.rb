@@ -5,7 +5,7 @@ end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
-  [0,1,2], #top rows
+  [0,1,2], #top row
   [3,4,5],
   [6,7,8],
   [0,3,6],
@@ -18,10 +18,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
     board_check = [board[win_combo[0]], board[win_combo[1]], board[win_combo[2]]]
-    board_check.all? {|space| space == "X"}
+    if board_check.all? {|space| space == "X"}
       return win_combo
-    #else
-    #  false
-    #end
+    else
+      false
+    end
   end
 end
