@@ -49,5 +49,7 @@ end
 
 def winner(board)
   winning_indices = won?(board)
-  return board[winning_indices[0]]
+  if winning_indices.class == Array
+    return board[winning_indices[0]]
+  end
 end
