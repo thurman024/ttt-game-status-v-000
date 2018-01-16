@@ -39,7 +39,7 @@ def full?(board)
 end
 
 def over?(board)
-  
+
 end
 
 def winner(board)
