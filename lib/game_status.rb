@@ -28,3 +28,11 @@ def won?(board)
     end
   end
 end
+
+def full?(board)
+  board.each do |spot|
+    if spot == "X" || spot == "O"
+      true
+    end
+  end
+end
