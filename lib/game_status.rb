@@ -30,7 +30,7 @@ def won?(board)
 end
 
 def full?(board)
-  spots_filled = board.detect {|spot| spot == "X" || spot == "O"}
+  spots_filled = board.select {|spot| spot == "X" || spot == "O"}
   if spots_filled.length == 9
     return true
   else
