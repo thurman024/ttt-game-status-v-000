@@ -20,8 +20,8 @@ def won?(board)
     board_check = [board[win_combo[0]], board[win_combo[0]], board[win_combo[0]]]
     board_check.all? {|space| space == "X"}
       return win_combo
-    else
-      false
-    end
+    #else
+    #  false
+    #end
   end
 end
