@@ -24,7 +24,7 @@ def won?(board)
       if board_check.all? {|space| space == "X"} || board_check.all? {|space| space == "O"}
         return win_combo
       end
-    
+    end
   else
     return nil
   end
