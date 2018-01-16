@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
-    board_check = [board[win_combo[0]], board[win_combo[0]], board[win_combo[0]]]
+    board_check = [board[win_combo[0]], board[win_combo[1]], board[win_combo[2]]]
     board_check.all? {|space| space == "X"}
       return win_combo
     #else
